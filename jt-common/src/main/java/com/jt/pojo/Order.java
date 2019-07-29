@@ -30,7 +30,7 @@ public class Order extends BasePojo{
     private String payment;
     private Integer paymentType;
     private String postFee;
-    private Integer status;
+    private Integer status;//6种状态：1.未付款，2.已付款，3.未发货，4.已发货，5.交易完成，6.交易取消
     private Date paymentTime;
     private Date consignTime;
     private Date endTime;

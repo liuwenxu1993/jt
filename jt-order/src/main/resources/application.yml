@@ -6,9 +6,9 @@ spring:  datasource:
     type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
-    password: root
+    password: tarena
 
-#mybatis-plush配置
+#mybatis-plus配置
 mybatis-plus:  type-aliases-package: com.jt.pojo
   mapper-locations: classpath:/mybatis/mappers/*.xml
   configuration:
@@ -25,7 +25,7 @@ dubbo:
   application:
     name: provider-order
   registry:
-    address: zookeeper://192.168.126.186:2181?backup=192.168.126.186:2182,192.168.126.186:2183
+    address: zookeeper://192.168.19.128:2181?backup=192.168.19.128:2182,192.168.19.128:2183
   protocol:
     name: dubbo
-    port: 20882
+    port: 20883
