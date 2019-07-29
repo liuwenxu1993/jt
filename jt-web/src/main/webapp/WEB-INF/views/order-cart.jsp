@@ -219,7 +219,7 @@
 										<div class="review-tbody">
 		<table class="order-table">
 			<tbody>
-			<c:forEach items="${carts }" var="cart">
+			<c:forEach items="${carts}" var="cart">
 				  <tr>
 				    <td class="fore1">
 					   <div class="p-goods">
