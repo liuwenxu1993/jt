@@ -20,4 +20,14 @@ public class FileController {
 		return "redirect:/file.jsp";
 	}
 
+	@RequestMapping("uploadfile")
+	public String uploadfile(@RequestParam("fileImage") MultipartFile file) throws Exception {
+		String fileName = file.getOriginalFilename();
+		System.out.println(fileName);
+
+		File path = new File("E:/image/"+fileName);
+		file.transferTo(path);
+		return "redirect:/file.jsp";
+	}
+
 }
